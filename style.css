@@ -1,0 +1,230 @@
+body{
+    background-color: white;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    margin: 0 0 3rem 0;
+}
+.logoC{
+    width: 35%;
+    transition: width 1s;
+    &:nth-child(2){
+        width: 35%;
+    }
+}
+.logoC:hover{
+    transition: width 1s;
+    &:nth-child(1){
+        width: 40%;
+    }
+}
+.opciones a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    transition: font-size 0.3s;
+    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+        font-size: 20px;
+    }
+}
+.opciones a:hover{
+    color: #977777;
+    transition: font-size 0.3s;
+    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+        font-size: 30px;
+    }
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.emp{
+    flex-direction: column;
+}
+.img{
+    width: 160px;
+    border-radius: 40px;
+    transition: width 0.5s;
+    &:nth-child(2){
+        width: 160px;
+    }
+}
+.text{
+    font-size: 0px;
+    text-align: justify;
+    position: fixed;
+    margin: 3rem 5rem 3rem 0rem;
+    left: 3rem;
+    transition: font-size 0.5s;
+    &:nth-child(3){
+        font-size: 0px;
+    }
+}
+.img:hover{
+    transition: width 0.5s;
+    &:nth-child(1){
+        width: 200px;
+    }
+}
+h2{
+    font-size: 20px;
+    right: 30%;
+    position: absolute;
+    bottom: 1rem;
+    transition: font-size 0.5s;
+    &:nth-child(3), &:nth-child(4){
+        font-size: 20px;
+    }
+}
+.d:hover h2{
+    transition: font-size 0.5s;
+    &:nth-child(1), &:nth-child(2){
+        font-size: 0px;
+    }
+}
+.emp:hover .text{
+    transition: font-size 0.5s;
+    &:nth-child(1), &:nth-child(2){
+        font-size: 24px;
+    }
+}
+a{
+    text-decoration: none;
+}
+.kl{
+    margin: 2rem 15rem 4rem;
+    text-align: center;
+}
+.dd{
+    justify-content: center;
+}
+
+button{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 70px;
+    height: 30px;
+    border: solid 2px;
+    transition: background-color 0.3s;
+    &:nth-child(1), &:nth-child(3){
+        background-color: white;
+        color: black;
+    }
+    transition: border-radius 1s;
+    &:nth-child(1){
+        border-radius: 20%;
+    }
+}
+button:hover{
+    transition: border-radius 1s;
+    &:nth-child(1), &:nth-child(2){
+        border-radius: 10% 60%;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+.tec{
+    margin: 10px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.tecni{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+model-viewer{
+    left: 10%;
+    width: 80%;
+    height: 420px;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.productos div{
+    width: 75%;
+    text-align: justify;
+}
+
+@media( max-width: 600px ){
+    .menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .img{
+        width: 75px;
+    }
+    .img:hover{
+        &:nth-child(1){
+            width: 95px;
+        }
+    }
+    .text{
+        margin: 0rem 1rem;
+        left: 6rem;
+        top: 15rem;
+    }
+    .emp:hover .text{
+        &:nth-child(1), &:nth-child(2){
+            font-size: 15px;
+        }
+    }
+    h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .mapa{
+        padding: 1rem 0.75rem;
+    }
+    .map{
+        width: 360px;
+        height: 180px;
+    }
+    .kl{
+        margin: 1rem 1rem;
+    }
+    model-viewer button{
+        position: absolute;
+        right: 1rem;
+    }
+    #cambiarRopa{
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+    }
+    #ar{
+        font-size: 10px;
+    }
+    .tec{
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfil{
+        width: 75%;
+    }
+}

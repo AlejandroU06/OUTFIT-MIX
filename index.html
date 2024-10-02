@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTFIT MIX</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="menu">
+        <section>
+            <img class="logoC" src="img/logo.png" alt="logo">
+        </section>
+        <section>
+            <nav class="opciones">
+                <a href="index.html">Inicio</a>
+                <a href="marcas.html">Marcas</a>
+                <a href="contacto.html">Empresa</a>
+            </nav>
+        </section>
+    </header>
+    <section class="dd">
+        <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <model-viewer id="model"  ar camera-controls touch-action="pan-y" auto-rotate src="3d/body2.glb" alt="A 3D model of an astronaut">
+        <button id="ar" slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+           Activar AR
+        </button>
+    </model-viewer>
+    </section>
+    <section class="boton">
+        <button id="cambiarRopa" onclick="cambio()">Ropa</button>
+    </section>
+    
+</body>
+</html>
